@@ -1,0 +1,94 @@
+.portal {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.portal__title {
+  margin: 0 0 16px;
+}
+
+.portal__nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.portal__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: 500;
+}
+
+/* NavLink tự thêm class "active" cho route hiện tại */
+.portal__link.active {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+/* ---------- Dossier ---------- */
+.dossier__title {
+  margin: 0 0 8px;
+}
+
+.sla {
+  margin: 8px 0 20px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.sla--ok { background: #dcfce7; }
+.sla--warning { background: #fef3c7; }
+.sla--expired { background: #fee2e2; }
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.matrix caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.matrix th,
+.matrix td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.matrix thead th {
+  border-bottom: 2px solid #9ca3af;
+  background: #f3f4f6;
+}
+
+.matrix tfoot th,
+.matrix tfoot td {
+  font-weight: 600;
+  border-top: 2px solid #9ca3af;
+}
+
+.verdict { font-weight: 600; }
+.verdict--over { color: #b91c1c; }
+.verdict--under { color: #a16207; }
+.verdict--fair { color: #15803d; }
+
+.dossier__conclusion {
+  margin-top: 16px;
+  font-size: 1.05rem;
+}
